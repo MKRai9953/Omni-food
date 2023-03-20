@@ -1,0 +1,62 @@
+/* 
+
+--01 TYPOGRAPHY SYSTEM
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+-Font weights:
+
+-Line Height:
+default: 1
+
+--Font Weight
+Default: 400
+
+--02 COLORS
+
+-primary:#e67e22
+Tints:
+Shades:
+Accents:
+Greys:
+#555
+
+
+--05 SHADOWS
+
+
+--04 06 BORDER- RADIUS
+
+--07 WHITE SPACE
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* This will change the default value of rem to 1rem = 10px */
+  font-size: 10px;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+.test {
+  background-color: red;
+  padding: 4rem;
+
+  max-width: 50rem;
+  color: #fff;
+  font-size: 2rem;
+  /* by default 1 rem == 16px if not changed  but it is changed in html tag above*/
+}
