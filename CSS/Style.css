@@ -6,9 +6,15 @@ FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
 -Font weights:
+Default:400
+medium:500
+semi-medium:600
+bold:700
 
 -Line Height:
 default: 1
+1.05
+1.06
 
 --Font Weight
 Default: 400
@@ -17,7 +23,7 @@ Default: 400
 
 -primary:#e67e22
 Tints: #fdf2e9;
-Shades:
+Shades:#cf711f
 Accents:
 Greys:
 #555
@@ -28,6 +34,8 @@ Greys:
 
 
 --04 06 BORDER- RADIUS
+
+default:9px
 
 --07 WHITE SPACE
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
@@ -47,24 +55,32 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
 }
-.section-hero {
-  background-color: #fdf2e9;
-  padding: 9.6rem 0;
-}
-.hero {
-  max-width: 130rem;
+
+/* ************************ */
+/* Genral COmponents */
+/* ************************ */
+.container {
+  max-width: 120rem;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 9.6rem;
-  align-items: center;
+  padding: 0 3.2rem;
 }
 
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.grid--2--cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3--cols {
+  grid-template-columns: repeat(3, 1fr);
+}
 .heading-primary {
   font-size: 5.2rem;
   font-weight: 70rem;
@@ -74,18 +90,13 @@ body {
   margin-bottom: 3.2rem;
 }
 
-.hero-description {
-  font-size: 2rem;
-  line-height: 1.6;
-  margin-bottom: 4.8rem;
-}
-
 .btn:link,
 .btn:visited {
   display: inline-block;
   color: #fff;
   text-decoration: none;
   font-size: 2rem;
+  font-weight: 600;
   padding: 1.6rem 3.2rem;
   border-radius: 0.9rem;
 
@@ -116,10 +127,127 @@ body {
   box-shadow: inset 0 0 0 3px #fff;
 }
 
+.delivered-imgs img:last-child {
+  margin: 0;
+}
+.margin--right-sm {
+  margin-right: 1.6rem !important;
+}
+
+/* ************************ */
+/* Header */
+/* ************************ */
+
+.header {
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  background-color: #fdf2e9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 2.2rem;
+}
+/* ************************* */
+/* Navigation */
+/* ************************* */
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+.main-nav-link:visited,
+.main-nav-link:link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3sec;
+  display: inline-block;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+.main-nav-link.nac-cta:link,
+.main-nav-link.nac-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #e67e22;
+}
+
+.main-nav-link.nac-cta:hover,
+.main-nav-link.nac-cta:active {
+  background-color: #cf711f;
+}
+/* ************************ */
+/* Hero Section */
+/* ************************ */
+
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 4.8rem 0 9.6rem 0;
+}
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
 .hero-img {
   width: 100%;
 }
 
-.margin--right-sm {
-  margin-right: 1.6rem !important;
+.delivered-meals {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 80px;
+}
+
+.delivered-imgs {
+  display: flex;
+}
+
+.delivered-imgs img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  border: 3px solid #fdf2e9;
+
+  margin-right: -1.6rem;
+}
+
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.delivered-text span {
+  color: #cf711f;
+  font-weight: 700;
+}
+/* *************** */
+/* How it Works Section */
+/* *************** */
+.section-how {
+  padding: 9.6rem 0;
+  background-color: orangered;
 }
