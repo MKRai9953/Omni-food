@@ -165,9 +165,28 @@ body {
   box-shadow: inset 0 0 0 3px #fff;
 }
 
+.link:visited,
+.link:link {
+  display: inline-block;
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 1.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
 .delivered-imgs img:last-child {
   margin: 0;
 }
 .margin--right-sm {
   margin-right: 1.6rem !important;
+}
+
+.center-text {
+  text-align: center;
 }

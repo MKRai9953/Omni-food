@@ -205,8 +205,14 @@
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 1.2rem;
   overflow: hidden;
+  transition: all 0.4s;
 }
 
+.meal:hover {
+  transform: translatey(-1.2rem);
+  /* scale: 1.05; */
+  box-shadow: 0 3.4rem 6.4rem rgba(0, 0, 0, 0.06);
+}
 .meal-content {
   padding: 3.2rem 4.8rem 4.8rem 4.8rem;
 }
@@ -268,6 +274,65 @@
   width: 100%;
 }
 
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
 strong {
   font-weight: 500;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+/* ************************ */
+/* Header */
+/* ************************ */
+
+.section-testimonials {
+  padding: 9.6rem 0;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4.8rem;
+}
+
+.testimonial-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+.testimonial-name {
+  font-size: 1.6rem;
+  color: #777;
 }
