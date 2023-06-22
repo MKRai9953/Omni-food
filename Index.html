@@ -3,8 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="Description"
+      content="AI-powered Tools to make nutritious food"
+    />
+    <!-- ALways include this whneever scaling for devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Omni-food</title>
+    <link rel="icon" href="img/favicon.png" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <!-- <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script> -->
+    <script
+      type=""
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <title>Omni-food &mdash; Never Cook Again!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,6 +36,7 @@
 
     <link rel="stylesheet" href="CSS/General.css" />
     <link rel="Stylesheet" href="CSS/Style.css" />
+    <link rel="stylesheet" href="CSS/queries.css" />
   </head>
   <body>
     <header class="header">
@@ -37,6 +58,11 @@
           </li>
         </ul>
       </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
 
     <main>
@@ -51,7 +77,7 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs.
             </p>
-            <a href="#" class="btn btn--full margin--right-sm"
+            <a href="#free-meals" class="btn btn--full margin--right-sm"
               >Start eating well</a
             >
             <a href="#" class="btn btn--outline">Learn More &darr;</a>
@@ -532,13 +558,14 @@
                 first meal is on us!
               </p>
 
-              <form action="#" class="cta-form" action="#">
+              <form action="#" class="cta-form" action="#" netlify>
                 <div>
                   <label for="full-name">full name</label>
                   <input
                     id="full-name"
                     type="text"
                     placeholder="johm smith"
+                    name="full-naem"
                     required
                   />
                 </div>
@@ -548,6 +575,7 @@
                     id="email-address"
                     type="email"
                     placeholder="abc@example.com"
+                    name="email"
                     required
                   />
                 </div>
@@ -555,7 +583,11 @@
                 <input type="checkbox" /> -->
                 <div>
                   <label>Where did you hear from us?</label>
-                  <select name="Select value" id="select-where">
+                  <select
+                    name="Select value"
+                    id="select-where"
+                    name="select-where"
+                  >
                     <option value="">Please choose one option:</option>
                     <option value="friends">Friends & Family</option>
                     <option value="podcast">Podcast</option>
@@ -601,7 +633,8 @@
           </ul>
 
           <p class="copyright">
-            Copyright &copy; 2027 by Omnifood, Inc. All Rights Reserved
+            Copyright &copy; <span class="year">2027</span> by Omnifood, Inc.
+            All Rights Reserved
           </p>
         </div>
         <div class="address-col">
@@ -648,9 +681,6 @@
         </nav>
       </div>
     </footer>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
+    <script deref src="./js/script.js"></script>
   </body>
 </html>

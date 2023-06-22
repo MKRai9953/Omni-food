@@ -9,6 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* position: relative; */
 }
 
 .logo {
@@ -22,6 +23,7 @@
   display: flex;
   gap: 3.2rem;
   align-items: center;
+  /* justify-content: space-between; */
 }
 
 .main-nav-link:visited,
@@ -51,6 +53,50 @@
 .main-nav-link.nac-cta:active {
   background-color: #cf711f;
 }
+
+/* Mobile Navigation */
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/* Sticky navigation */
+
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  /* background-color: #fff; */
+  z-index: 999;
+  /* opacity: 95%; */
+  background-color: rgba(255, 255, 255, 0.5);
+  /* overflow: hidden; */
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(5px);
+}
+
+.sticky .section-hero {
+  margin-top: 9.6rem;
+}
+
 /* ************************ */
 /* Hero Section */
 /* ************************ */
@@ -59,6 +105,7 @@
   background-color: #fdf2e9;
   padding: 4.8rem 0 9.6rem 0;
 }
+
 .hero {
   max-width: 130rem;
   margin: 0 auto;
@@ -294,6 +341,7 @@ strong {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .margin-bottom-md {

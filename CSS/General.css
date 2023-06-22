@@ -58,6 +58,8 @@ html {
   /* This will change the default value of rem to 1rem = 10px */
   /* font-size: 10px; */
   font-size: 62.5%;
+  overflow-x: hidden;
+  /* scroll-behavior: smooth; */
 }
 
 body {
@@ -65,11 +67,9 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  overflow-x: hidden;
 }
 
-/* ************************ */
-/* Genral COmponents */
-/* ************************ */
 .container {
   max-width: 120rem;
   margin: 0 auto;
@@ -214,6 +214,7 @@ body {
 .link:active {
   color: #cf711f;
   border-bottom: 1px solid transparent;
+  /* border-bottom: none; */
 }
 
 .list {
@@ -234,9 +235,9 @@ body {
   text-align: center;
 }
 
-/* *:focus {
+*:focus {
   outline: none;
   outline: 4px dotted #cf711f;
   outline-offset: 8px;
   box-shadow: 0 0 0 0.8rem rgba(133, 65, 5, 0.477);
-} */
+}
